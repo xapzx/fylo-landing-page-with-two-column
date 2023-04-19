@@ -1,0 +1,19 @@
+:root {
+    /* Primary */
+    --clr-primary-footerbg-headings: hsl(243, 87%, 12%);
+    --clr-primary-secondarybg-text: hsl(238, 22%, 44%);
+
+    /* Accent */
+    --clr-accent-started-btn: hsl(224, 93%, 58%);
+    --clr-accent-redirect-text: hsl(170, 45%, 43%);
+
+    /* Neutral */
+    --clr-neutral-lightgrayishblue: hsl(240, 75%, 98%);
+    --clr-neutral-lightgray: hsl(0, 0%, 75%);
+
+    /* Fonts */
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-secondary: 'Raleway', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
