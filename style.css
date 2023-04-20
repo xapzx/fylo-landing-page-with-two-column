@@ -52,6 +52,7 @@ ul {
     font-size: 0.75rem;
 }
 
+/* Hero Section */
 .hero {
     padding: 0 2rem 9rem;
     background-image: url(images/bg-curve-mobile.svg);
@@ -67,12 +68,12 @@ ul {
     font-family: var(--ff-secondary);
     font-weight: var(--fw-bold);
     font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 1.5rem; */
 }
 
 .content-text {
     font-size: 0.875rem;
-    margin-bottom: 1.825rem;
+    /* margin-bottom: 1.825rem; */
 }
 
 .register-input-wrapper {
@@ -103,6 +104,99 @@ ul {
     font-family: var(--ff-secondary);
     font-weight: var(--fw-bold);
     font-size: 0.875rem;
+}
+
+/* Content Section */
+.content-wrapper {
+    background-color: var(--clr-neutral-lightgrayishblue);
+    padding: 2.5rem 1.5rem 4rem;
+    text-align: left;
+}
+
+.content-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.content-img {
+    margin-bottom: 5rem;
+}
+
+.content-title {
+    font-family: var(--ff-secondary);
+    font-size: 1rem;
+    font-weight: var(--fw-bold);
+    text-align: center;
+}
+
+.content-wrapper .content-text {
+    color: var(--clr-primary-secondarybg-text);
+}
+
+.redirect-see {
+    position: relative;
+    color: var(--clr-accent-redirect-text);
+    font-size: 0.75rem;
+    text-align: center;
+    border-bottom: 1px solid var(--clr-accent-redirect-text);
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+.redirect-see::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url(images/icon-arrow.svg);
+    position: absolute;
+    margin-left: 0.5rem;
+}
+
+.testimony-wrapper {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 4px;
+    width: 280px;
+    margin: 0 auto;
+    padding: 1rem 1rem 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.testimony-text {
+    font-size: 0.625rem;
+    line-height: 1.7;
+    font-weight: var(--fw-bold);
+}
+
+.testinomy-author-wrapper {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.testinomy-author-img {
+    width: 24px;
+    border-radius: 50%;
+    grid-row: 1 / -1;
+}
+
+.testinomy-author-name {
+    font-size: 0.625rem;
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+}
+
+.testinomy-author-position {
+    font-size: 0.4375rem;
+}
+
+.grid-group {
+    display: grid;
 }
 
 .sr-only {
