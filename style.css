@@ -128,6 +128,12 @@ ul {
     font-family: var(--ff-secondary);
     font-weight: var(--fw-bold);
     font-size: 0.875rem;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 0.2);
+}
+
+.register-btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 @media (min-width: 900px) {
@@ -179,7 +185,7 @@ ul {
 /* Content Section */
 .content-wrapper {
     background-color: var(--clr-neutral-lightgrayishblue);
-    padding: 2.5rem 1.5rem 4rem;
+    padding: 2.5rem 1.5rem 5rem;
     text-align: left;
 }
 
@@ -200,10 +206,6 @@ ul {
     text-align: center;
 }
 
-.content-wrapper .content-text {
-    color: var(--clr-primary-secondarybg-text);
-}
-
 .redirect-see {
     position: relative;
     color: var(--clr-accent-redirect-text);
@@ -212,6 +214,11 @@ ul {
     border-bottom: 1px solid var(--clr-accent-redirect-text);
     width: fit-content;
     margin: 1rem auto;
+}
+
+.redirect-see:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 .redirect-see::after {
@@ -278,7 +285,6 @@ ul {
     }
 
     .content-wrapper .content-text {
-        color: var(--clr-primary-footerbg-headings);
         font-size: 1rem;
         max-width: 60ch;
     }
@@ -318,6 +324,85 @@ ul {
     }
 }
 
+.early-access {
+    background-color: var(--clr-primary-secondarybg-text);
+    color: var(--clr-neutral-lightgrayishblue);
+    padding: 3.5rem 3rem 4.5rem;
+}
+
+.early-access .content-title {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+
+.early-access .content-text {
+    margin-bottom: 1rem;
+}
+
+.early-access .register-input-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    gap: 0.5rem;
+}
+
+.early-access .register-btn {
+    font-size: 0.625rem;
+}
+
+.early-access #register {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    font-size: 0.625rem;
+    border: none;
+}
+
+.early-access #register::placeholder {
+    font-size: 0.625rem;
+}
+
+@media (min-width: 900px) {
+    .early-access {
+        padding: 7rem var(--paddingX-desktop) 5.5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .early-access .content-title {
+        font-size: 2rem;
+    }
+    
+    .early-access .content-text {
+        max-width: 55ch;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .early-access .register-input-wrapper {
+        flex-direction: column;
+        justify-items: center;
+        gap: 1rem;
+        margin-left: 7.5rem;
+    }
+    
+    .early-access .register-input-wrapper > label {
+        flex-basis: auto;
+        width: 85%;
+    }
+
+    .early-access #register {
+        font-size: 1rem;
+    }
+
+    .early-access #register::placeholder {
+        font-size: 0.8rem;
+    }
+
+    .early-access .register-btn {
+        font-size: 0.85rem;
+        width: fit-content;
+        padding: 0 2rem;
+    }
+}
+
+/* Utilities */
 .grid-group {
     display: grid;
 }
